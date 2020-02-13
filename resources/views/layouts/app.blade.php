@@ -82,8 +82,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="lang/ar">Arabic</a>
-                                    <a class="dropdown-item" href="lang/en">English</a>
+                                    <a class="dropdown-item" href="{{ url('lang/ar') }}">Arabic</a>
+                                    <a class="dropdown-item" href="{{ url('lang/en') }}">English</a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf

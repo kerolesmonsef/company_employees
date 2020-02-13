@@ -16,7 +16,8 @@ Route::get('lang/{locale}', 'HomeController@lang');
 
 
 
-Auth::routes();
+Auth::routes(['register' => false]);
+
 
 Route::get('/home', 'CompanyController@index')->name('home');
 Route::put('/update_company/{company}', 'CompanyController@edit');
